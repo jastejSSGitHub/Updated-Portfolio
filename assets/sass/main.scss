@@ -55,7 +55,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
+		//font: inherit;
 		vertical-align: baseline;
 	}
 
@@ -182,6 +182,7 @@
 	}
 
 	h2 {
+		Font-Family: 'Ubuntu';
 		font-size: 2em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
@@ -750,7 +751,6 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url('images/overlay.png');
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -1083,7 +1083,7 @@
 		&.primary {
 			background-color: _palette(accent1);
 			box-shadow: none;
-			color: _palette(fg-bold) !important;
+			color: _palette(button-text) !important;
 
 			&:hover {
 				background-color: lighten(_palette(accent1), 5);
@@ -1157,6 +1157,7 @@
 		}
 
 		&:before {
+			background-image: url('images/overlay.png');
 			content: '';
 			display: block;
 			height: 100%;
