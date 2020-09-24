@@ -50,7 +50,7 @@
 						<div class="flexbox-3"> <!-----------------------Main Flex---------->
 							<div class="flex-container">  <!--------------2nd flex conainer---------->
 								<header>
-										<div class="heading">
+										<div data-tilt data-tilt-max="15" data-tilt-speed="500" data-tilt-perspective="700" class="heading">
 											<div>
 												<h2 id="am">I AM </h2>
 											</div>
@@ -70,7 +70,7 @@
 										
 								</header>
 							</div>
-							<div data-tilt data-tilt-scale="1.1"><span id="bannerImg" class="image"><img src="images/Float.gif" alt="" /></span></div>
+							<span data-tilt data-tilt-max="15" data-tilt-speed="500" data-tilt-perspective="700" id="bannerImg" class="image"><img   src="images/float.gif" class="js-tilt" /></span>
 							
 							
 						</div>
@@ -233,16 +233,15 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/demo.js"></script>
 			<script type="text/javascript" src="vanilla-tilt.js"></script>
+			<script src="tilt.jquery.js"></script>
+			<script>
+				$('.js-tilt').tilt({
+					scale: 1.2
+				})
+				</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
-			<script type="text/javascript">
-				VanillaTilt.init(document.querySelector(".your-element"), {
-					max: 25,
-					speed: 400
-				});
-				
-				//It also supports NodeList
-				VanillaTilt.init(document.querySelectorAll(".your-element"));
-			</script>
+			
 
 	</body>
 </html>
