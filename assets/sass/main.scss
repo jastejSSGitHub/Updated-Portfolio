@@ -182,11 +182,53 @@
 	}
 
 	h2 {
-		Font-Family: 'Ubuntu';
+		font-family: 'Inter', sans-serif;
 		font-size: 2em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
+		
 	}
+
+	#h2name {
+		display: inline;
+			}
+
+	#am{
+		color: rgb(141, 84, 84);
+	}
+
+	.flex-container{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+	}
+
+	.flex-container .heading{
+		display: flex;
+		justify-content: center;
+		flex: 1;
+	}
+
+	.flex-container p{
+		flex:1;
+		justify-content: center;
+		text-align: center;	
+		
+	}
+
+	.flex-container div #am { //I am
+		padding-right: 0.25em ;
+			
+	}
+	.flexbox-3{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.flexbox-3 img{
+	}
+
 
 	h3 {
 		font-size: 1.35em;
@@ -1300,8 +1342,6 @@
 	.wrapper {
 		padding: $size-wrapper-pad-tb 0 ($size-wrapper-pad-tb - _size(element-margin)) 0;
 
-		&.style1 {
-		}
 
 		&.style2 {
 			background: _palette(accent1);
