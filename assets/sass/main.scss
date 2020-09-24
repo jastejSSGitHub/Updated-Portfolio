@@ -226,6 +226,28 @@
 		flex-wrap: wrap;
 	}
 
+
+	.flex{
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		
+		
+		}
+
+	.flex h1{
+		padding-top: 0.8em;;
+		color: rgb(160, 71, 71);
+		font-family: 'Inter';
+		font-size: 1.6em;
+	
+	}
+	.flex .typewrite{
+		padding-left: 0.3em;
+		justify-content: left;		
+		color: rgb(128, 6, 6);
+
+	}
 	.flexbox-3 img{
 	}
 

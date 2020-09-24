@@ -45,11 +45,8 @@
 			<!-- Banner -->
 				<section id="banner">
 					<div class="content" id="name-banner">
-						<h1>
-							<a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im jastej.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-							  <span class="wrap"></span>
-							</a>
-						</h1>
+						
+						
 						<div class="flexbox-3"> <!-----------------------Main Flex---------->
 							<div class="flex-container">  <!--------------2nd flex conainer---------->
 								<header>
@@ -62,13 +59,19 @@
 												<h2 id="h2name">JASTEJ SEHRA.</h2>
 											</div>
 										</div>
-										<p>A developer, designer, and a coffee addict.<br />
-										Started sketching since 5 years old, never stopped</p>
+										<!--<p>A developer, designer, and a coffee addict.<br />
+										Started sketching since 5 years old, never stopped</p>-->
+										<div class="flex">
+											<h1 > I create  </h1>
+											<h1  class="typewrite" data-period="900" data-type='[ "Beautiful web content.", "Apps.", "2D games.", " emotion."]'>
+											</h1>
+										</div>
 										
 										
 								</header>
 							</div>
-							<span id="bannerImg" class="image"><img src="images/Float.gif" alt="" /></span>
+							<div data-tilt data-tilt-scale="1.1"><span id="bannerImg" class="image"><img src="images/Float.gif" alt="" /></span></div>
+							
 							
 						</div>
 					</div>
@@ -82,17 +85,14 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-4 col-12-medium">
-									<h1>
-										<a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im jastej.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-										  <span class="wrap"></span>
-										</a>
-									</h1>
+									
 									<header>
 										<h2>Creating some beauty with code and art.</h2>
 										<p>Sleek and Modern solutions for you.</p>
 									</header>
 								</div>
 								<div class="col-4 col-12-medium">
+									
 									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
 									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
 									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
@@ -231,6 +231,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/demo.js"></script>
+			<script type="text/javascript" src="vanilla-tilt.js"></script>
+
+			<script type="text/javascript">
+				VanillaTilt.init(document.querySelector(".your-element"), {
+					max: 25,
+					speed: 400
+				});
+				
+				//It also supports NodeList
+				VanillaTilt.init(document.querySelectorAll(".your-element"));
+			</script>
 
 	</body>
 </html>
