@@ -1211,6 +1211,8 @@
 		background: rgb(223,98,98);
 		background: linear-gradient(90deg, rgba(223,98,98,1) 48%, rgba(173,14,0,1) 100%, rgba(83,5,5,1) 100%);
 		scale: 20em;
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	} ////////////////////////////button inside go to projects*/
 
 
@@ -1243,7 +1245,7 @@
 		&:hover {
 			background: rgba(100, 0, 0, 0.1 );
 			font-size: 0.66em;
-			color:#9b0101;
+			color:rgb(128, 53, 53,0.6);
 
 			
 			
@@ -1324,7 +1326,7 @@
 		z-index: 1;
 
 		&:before {
-			background-image: url('images/arrowDemo.svg');
+			background-image: url('images/arrowDemo2.svg');
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-size: contain;
