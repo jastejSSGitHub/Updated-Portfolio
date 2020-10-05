@@ -1148,9 +1148,10 @@
 			background-color: _palette(accent1);
 			box-shadow: none;
 			color: _palette(button-text) !important;
+			
 
 			&:hover {
-				background-color: lighten(_palette(accent1), 5);
+				background-color: (_palette(accent2-transparent));
 			}
 
 			&:active {
@@ -1167,6 +1168,144 @@
 			opacity: 0.25;
 		}
 	}
+
+	.flexDiv
+	{
+	display: flex;
+	}
+
+	.flexButton{
+		justify-content: center;
+		list-style: none;
+		padding-top: 1em;
+		padding-bottom: 3em;
+		
+		
+	}
+
+	.flexButton li {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		text-decoration: none;
+		border-color: rgb(255, 255, 255);
+		outline: 0;
+	}
+
+	.flexButton li a {
+		text-decoration: none;
+		color: accent1;
+		
+		outline: 0;
+	}
+	/*.flexButton a{
+		
+		background: rgb(223,98,98);
+		background: linear-gradient(90deg, rgba(223,98,98,1) 0%, rgba(173,14,0,1) 100%, rgba(83,5,5,1) 100%);
+		padding: 1em;
+		color: white;
+	}
+
+	.flexButton a:hover{
+		color: white;
+		background: rgb(223,98,98);
+		background: linear-gradient(90deg, rgba(223,98,98,1) 48%, rgba(173,14,0,1) 100%, rgba(83,5,5,1) 100%);
+		scale: 20em;
+	} ////////////////////////////button inside go to projects*/
+
+
+	.flexLink a{
+		outline: 0;
+		font-size: 1.5em;
+	}
+	.flexLink{
+	
+		--offset: 15px;
+		--border-size: 3px;
+		
+		display: block;
+		position: relative;
+		padding: 0.8em 2em;
+		appearance: none;
+		border: 0;
+		background: transparent;
+		color: rgb(128, 6, 6,0.2);
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		outline: none;
+		cursor: pointer;
+		font-weight: bold;
+		border-radius: 0;
+		box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+		transition: background .8s ease;
+		font-size: 0.6em;
+		
+		&:hover {
+			background: rgba(100, 0, 0, 0.1 );
+			font-size: 0.66em;
+			color:#9b0101;
+
+			
+			
+		}
+		
+		&__horizontal,
+		&__vertical {
+			position: absolute;
+			top: var(--horizontal-offset, 0);
+			right: var(--vertical-offset, 0);
+			bottom: var(--horizontal-offset, 0);
+			left: var(--vertical-offset, 0);
+			transition: transform .8s ease;
+			will-change: transform;
+			
+			&::before {
+				content: '';
+				position: absolute;
+				border: inherit;
+			}
+		}
+		
+		&__horizontal {
+			--vertical-offset: calc(var(--offset) * -1);
+			border-top: var(--border-size) solid currentcolor;
+			border-bottom: var(--border-size) solid currentcolor;
+			
+			&::before {
+				top: calc(var(--vertical-offset) - var(--border-size));
+				bottom: calc(var(--vertical-offset) - var(--border-size));
+				left: calc(var(--vertical-offset) * -1);
+				right: calc(var(--vertical-offset) * -1);
+			}
+		}
+		
+		&:hover &__horizontal {
+			transform: scaleX(0);
+		}
+		
+		&__vertical {
+			--horizontal-offset: calc(var(--offset) * -1);
+			border-left: var(--border-size) solid currentcolor;
+			border-right: var(--border-size) solid currentcolor;
+			
+			&::before {
+				top: calc(var(--horizontal-offset) * -1);
+				bottom: calc(var(--horizontal-offset) * -1);
+				left: calc(var(--horizontal-offset) - var(--border-size));
+				right: calc(var(--horizontal-offset) - var(--border-size));
+			}
+		}
+		
+		&:hover &__vertical {
+			transform: scaleY(0);
+		}
+		
+	}
+
+
+
+
+
 
 /* Goto Next */
 
