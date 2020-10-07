@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .fullscreen{
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+      scrollbar-shadow-color: violet;
+  }
+
+  #mainHeading{
+      margin-bottom: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 0;
+  }
+   
+  .wrapper > * {
+    padding: 0 20px;
+  }
+   
+  .page-main {
+    flex-grow: 1;
+  }
+
+  .page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.page-header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+ 
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+ 
+  .page-header .cta-contact {
+    order: 1;
+  }
+}
+
+/*Page-Main*/
+/* variables */
+:root {
+    --main-white-color: white;
+    --main-purple-color: #9e89b8;
+  }
+   
+  .page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 350px;
+    background: var(--main-purple-color)  no-repeat center / cover;
+    
+    background-blend-mode: luminosity;
+    color: var(--main-white-color);
+  }
+   
+  .page-main div {
+    max-width: 500px;
+    background-image: url('images/work-detail-1/floatAltDemo.gif');
+  }
+   
+  @media screen and (min-width: 768px) {
+    .page-main {
+      padding-left: 90px;
+    }
+  }
+
+  .main-container{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: wheat;
+
+  }
+
+  .main-container .category{
+      flex: 1;
+      justify-content: center;
+  }
+
+  .main-container .category .box{
+    flex: 1;
+    justify-content: center;
+}
+
+.box p,h1{
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .box {
+        flex-direction: row;
+    }
+}
+
+
+
+  /*Footer*/
+  .page-footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+   
+  .page-footer ul {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+   
+  @media screen and (min-width: 550px) {
+    .page-footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+   
+    .page-footer ul {
+      margin-bottom: 0;
+    }
+  }

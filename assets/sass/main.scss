@@ -37,6 +37,8 @@
 	$size-wrapper-pad-tb: 6em;
 	$size-wrapper-pad-lr: 3em;
 
+
+	
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
 
@@ -1304,9 +1306,16 @@
 		
 	}
 
+	.tg-themeimghover img {
+		margin-left: 20px;
+		padding-right: 150px;
+	   }
+	   
+	    .tg-themeimghover img {
+		padding-right: 300px;
+	   }
 
-
-
+	   
 
 
 /* Goto Next */
