@@ -42,6 +42,7 @@ body {
             font-size: 20px;
             padding: 0;
             list-style: none;
+            outline: none;
         }
         .item {
             padding: 10px;
@@ -66,7 +67,7 @@ body {
     
     /*Mobile----------navbar*/
     nav{
-      background-color: wheat;
+      background-color: rgb(255, 255, 255);
     }
     .menu {
       display: flex;
@@ -137,6 +138,10 @@ body {
       
   }
 
+  .toggle i{
+    color: tomato;
+  }
+
   .item .has-submenu{
     background-color: rgb(87, 32, 22);
   }
@@ -146,7 +151,7 @@ body {
       line-height: 16px;
       font-weight: 900; 
       content: "\f078";
-      color: white;
+      color: tomato;
       padding-left: 5px;
       text-align: center;
   }
@@ -161,8 +166,12 @@ body {
       background-color: rgb(255, 255, 255);
       padding-left: 0m;;
       
-      
   }
+  .logo , .logo li, li a {
+    outline: 0;
+    border: 0;
+ }
+  
 
   #projectsNav{
     background-color: rgb(255, 255, 255);
@@ -196,15 +205,25 @@ background-color: tomato;
   }
 
  
-
+/*-------------------------------------------*/
     
 /* Tablet menu */
 @media all and (min-width: 700px) {
+
+  .nav{
+    background-color: white;
+  }
   .menu {
       justify-content: center;
   }
   .logo {
-      flex: 0.5;
+      flex: 1;
+      padding-left: 2em;
+      text-decoration: none;
+  }
+
+  .logo li{
+    outline: 0;
   }
   .item.button {
       width: auto;
@@ -259,6 +278,13 @@ background-color: tomato;
       margin-top: 0;
       padding-top: 0.5em;
       list-style: none;
+      flex: 1;
+      outline: none;
+  }
+
+  .logo , .logo li, li a {
+     outline: 0;
+     border: 0;
   }
   .item {
       order: 1;
@@ -276,7 +302,7 @@ background-color: tomato;
       position: absolute;
       left: 0;
       top: 68px;
-      background: #111;
+      background: tomato;
   }
   .toggle {
       display: none;
@@ -287,7 +313,7 @@ background-color: tomato;
 
   .logo a{
     padding-bottom: 0;
-    background-color: yellowgreen;
+    background-color: rgb(255, 255, 255);
   }
 
 
