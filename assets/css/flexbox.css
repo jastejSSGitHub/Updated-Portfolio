@@ -124,6 +124,9 @@ body {
     display: none;
     padding-left: 2.8em;
     margin-left: 0;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    z-index: 1;
   }
  
 
@@ -198,6 +201,7 @@ body {
     align-items: center;
     text-align: center;
     padding-right: 3.2em;
+    width: 20em;
   }
 
   .submenu-active li a{ /*Inside submenu back color*/
@@ -272,6 +276,7 @@ background-color: tomato;
       align-items: flex-start;     
       flex-wrap: nowrap;
       background: none;
+      padding-right: 0;
   }
   .logo {
       order: 0;
